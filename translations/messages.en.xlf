@@ -4,90 +4,91 @@
     <header>
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
+
     <body>
       <trans-unit id="gpdk1mF" resname="Détails article">
         <source>Détails article</source>
-        <target>__Détails article</target>
+        <target>Details article</target>
       </trans-unit>
       <trans-unit id="pFJeh9I" resname="Détails de l'article">
         <source>Détails de l'article</source>
-        <target>__Détails de l'article</target>
+        <target>Article's details</target>
       </trans-unit>
       <trans-unit id="xtDSRud" resname="Titre de l'article">
         <source>Titre de l'article</source>
-        <target>__Titre de l'article</target>
+        <target>Article's title</target>
       </trans-unit>
       <trans-unit id="em3lZw6" resname="Contenu">
         <source>Contenu</source>
-        <target>__Contenu</target>
+        <target>Content</target>
       </trans-unit>
       <trans-unit id="GqTLC8y" resname="Image">
         <source>Image</source>
-        <target>__Image</target>
+        <target>Picture</target>
       </trans-unit>
       <trans-unit id="PUjiH53" resname="Crée le :">
         <source>Crée le :</source>
-        <target>__Crée le :</target>
+        <target>Created at :</target>
       </trans-unit>
       <trans-unit id="HvZhf66" resname="Mis à jour le :">
         <source>Mis à jour le :</source>
-        <target>__Mis à jour le :</target>
+        <target>Update at:</target>
       </trans-unit>
       <trans-unit id="QLeNDdM" resname="Retour à la liste">
         <source>Retour à la liste</source>
-        <target>__Retour à la liste</target>
+        <target>Back to list</target>
       </trans-unit>
       <trans-unit id="RoibQ7y" resname="Modification">
         <source>Modification</source>
-        <target>__Modification</target>
+        <target>Edit</target>
       </trans-unit>
       <trans-unit id="KdlJIlE" resname="Article">
         <source>Article</source>
-        <target>__Article</target>
+        <target>Article</target>
       </trans-unit>
       <trans-unit id="de3pVOm" resname="Ajouter article">
         <source>Ajouter article</source>
-        <target>__Ajouter article</target>
+        <target>Add new article</target>
       </trans-unit>
       <trans-unit id="SM5uCSE" resname="Créer le :">
         <source>Créer le :</source>
-        <target>__Créer le :</target>
+        <target>Created at :</target>
       </trans-unit>
       <trans-unit id="F_ruSJs" resname="Détails">
         <source>Détails</source>
-        <target>__Détails</target>
+        <target>Details</target>
       </trans-unit>
       <trans-unit id="4klL3cv" resname="Pas de résultat à afficher">
         <source>Pas de résultat à afficher</source>
-        <target>__Pas de résultat à afficher</target>
+        <target>No result</target>
       </trans-unit>
       <trans-unit id="d6BGgXI" resname="Nouvel article">
         <source>Nouvel article</source>
-        <target>__Nouvel article</target>
+        <target>Add new article</target>
       </trans-unit>
       <trans-unit id="9pHT9Bu" resname="Créer nouvel article">
         <source>Créer nouvel article</source>
-        <target>__Créer nouvel article</target>
+        <target>Create new article</target>
       </trans-unit>
       <trans-unit id="KtbSHo0" resname="Modification article">
         <source>Modification article</source>
-        <target>__Modification article</target>
+        <target>Edit article</target>
       </trans-unit>
       <trans-unit id="Nf2STMV" resname="Retour à la liste des articles">
         <source>Retour à la liste des articles</source>
-        <target>__Retour à la liste des articles</target>
+        <target>Back to article list</target>
       </trans-unit>
       <trans-unit id="UzFhc1Y" resname="Accueil">
         <source>Accueil</source>
-        <target>__Accueil</target>
+        <target>Home</target>
       </trans-unit>
       <trans-unit id="R70pB1_" resname="Content">
         <source>Content</source>
-        <target>__Content</target>
+        <target>Content</target>
       </trans-unit>
       <trans-unit id="UM0kLlE" resname="Techno">
         <source>Techno</source>
-        <target>__Techno</target>
+        <target>Techno</target>
       </trans-unit>
       <trans-unit id="NV958p1" resname="Comments">
         <source>Comments</source>
@@ -95,215 +96,215 @@
       </trans-unit>
       <trans-unit id="awzJBNC" resname="Users">
         <source>Users</source>
-        <target>__Users</target>
+        <target>Users</target>
       </trans-unit>
       <trans-unit id="NNH2MJk" resname="Détails techno">
         <source>Détails techno</source>
-        <target>__Détails techno</target>
+        <target>Details techno</target>
       </trans-unit>
       <trans-unit id="ew5ZLOW" resname="Nom de la techno">
         <source>Nom de la techno</source>
-        <target>__Nom de la techno</target>
+        <target>Name of techno</target>
       </trans-unit>
       <trans-unit id="yhDJ8eR" resname="Image de la techno">
         <source>Image de la techno</source>
-        <target>__Image de la techno</target>
+        <target>techno's picture</target>
       </trans-unit>
       <trans-unit id="QuN2BLY" resname="Modifier">
         <source>Modifier</source>
-        <target>__Modifier</target>
+        <target>Edit</target>
       </trans-unit>
       <trans-unit id="ssEkU20" resname="Nom">
         <source>Nom</source>
-        <target>__Nom</target>
+        <target>Name</target>
       </trans-unit>
       <trans-unit id="ivblP8Q" resname="Pas de résultat">
         <source>Pas de résultat</source>
-        <target>__Pas de résultat</target>
+        <target>No result</target>
       </trans-unit>
       <trans-unit id="rNDpL4K" resname="Ajout techno">
         <source>Ajout techno</source>
-        <target>__Ajout techno</target>
+        <target>Add techno</target>
       </trans-unit>
       <trans-unit id="Nlq1q2k" resname="Ajouter une nouvelle techno">
         <source>Ajouter une nouvelle techno</source>
-        <target>__Ajouter une nouvelle techno</target>
+        <target>Add new techno</target>
       </trans-unit>
       <trans-unit id="Lnod4Sj" resname="Retour à la liste des produits">
         <source>Retour à la liste des produits</source>
-        <target>__Retour à la liste des produits</target>
+        <target>Back to list</target>
       </trans-unit>
       <trans-unit id="LgCzUvE" resname="Modification de la techno">
         <source>Modification de la techno</source>
-        <target>__Modification de la techno</target>
+        <target>Edit techno</target>
       </trans-unit>
       <trans-unit id="vBJTrrJ" resname="Retour à la liste des technos">
         <source>Retour à la liste des technos</source>
-        <target>__Retour à la liste des technos</target>
+        <target>Back to techno list</target>
       </trans-unit>
       <trans-unit id="biwzSsd" resname="Détails du contenu">
         <source>Détails du contenu</source>
-        <target>__Détails du contenu</target>
+        <target>Content's details</target>
       </trans-unit>
       <trans-unit id="BeFdUVE" resname="Titre du contenu">
         <source>Titre du contenu</source>
-        <target>__Titre du contenu</target>
+        <target>Content's title</target>
       </trans-unit>
       <trans-unit id="VAH_Z9P" resname="Date de création">
         <source>Date de création</source>
-        <target>__Date de création</target>
+        <target>Created at</target>
       </trans-unit>
       <trans-unit id="Dr0lo0H" resname="Ville">
         <source>Ville</source>
-        <target>__Ville</target>
+        <target>City</target>
       </trans-unit>
       <trans-unit id="h8wSOXh" resname="Années">
         <source>Années</source>
-        <target>__Années</target>
+        <target>Years</target>
       </trans-unit>
       <trans-unit id="nP36Dhu" resname="Descriptif">
         <source>Descriptif</source>
-        <target>__Descriptif</target>
+        <target>Description</target>
       </trans-unit>
       <trans-unit id="eOeSABC" resname="Titre">
         <source>Titre</source>
-        <target>__Titre</target>
+        <target>Title</target>
       </trans-unit>
       <trans-unit id="VhQI.8p" resname="Année">
         <source>Année</source>
-        <target>__Année</target>
+        <target>Years</target>
       </trans-unit>
       <trans-unit id="Um4Ah8w" resname="Description">
         <source>Description</source>
-        <target>__Description</target>
+        <target>Description</target>
       </trans-unit>
       <trans-unit id="hYhlMuF" resname="Pas de résultats">
         <source>Pas de résultats</source>
-        <target>__Pas de résultats</target>
+        <target>No result</target>
       </trans-unit>
       <trans-unit id="VxwVkIR" resname="Nouveau contenu">
         <source>Nouveau contenu</source>
-        <target>__Nouveau contenu</target>
+        <target>New content</target>
       </trans-unit>
       <trans-unit id="V5x03pW" resname="Créer un nouveau contenu">
         <source>Créer un nouveau contenu</source>
-        <target>__Créer un nouveau contenu</target>
+        <target>Add new content</target>
       </trans-unit>
       <trans-unit id="hkPfcE_" resname="Modification du contenu">
         <source>Modification du contenu</source>
-        <target>__Modification du contenu</target>
+        <target>Edit content</target>
       </trans-unit>
       <trans-unit id="ahUX1W3" resname="Retour à la liste des contenus">
         <source>Retour à la liste des contenus</source>
-        <target>__Retour à la liste des contenus</target>
+        <target>Back to content list</target>
       </trans-unit>
       <trans-unit id="EojFwHk" resname="Détails commentaire">
         <source>Détails commentaire</source>
-        <target>__Détails commentaire</target>
+        <target>Details comment</target>
       </trans-unit>
       <trans-unit id="NrFq4hD" resname="Détails du commentaire">
         <source>Détails du commentaire</source>
-        <target>__Détails du commentaire</target>
+        <target>Details comment</target>
       </trans-unit>
       <trans-unit id="SK2xDP8" resname="Nom de l'auteur">
         <source>Nom de l'auteur</source>
-        <target>__Nom de l'auteur</target>
+        <target>Author</target>
       </trans-unit>
       <trans-unit id="SNPoFla" resname="Commentaire">
         <source>Commentaire</source>
-        <target>__Commentaire</target>
+        <target>Comment</target>
       </trans-unit>
       <trans-unit id="9516ize" resname="Commentaires">
         <source>Commentaires</source>
-        <target>__Commentaires</target>
+        <target>Comment</target>
       </trans-unit>
       <trans-unit id="8CJuGyz" resname="Liste des commentaires">
         <source>Liste des commentaires</source>
-        <target>__Liste des commentaires</target>
+        <target>Comment's list</target>
       </trans-unit>
       <trans-unit id="nz33U6Q" resname="Create new">
         <source>Create new</source>
-        <target>__Create new</target>
+        <target>Create new</target>
       </trans-unit>
       <trans-unit id="Cd_cZmx" resname="Prénom de l'auteur">
         <source>Prénom de l'auteur</source>
-        <target>__Prénom de l'auteur</target>
+        <target>Author's name</target>
       </trans-unit>
       <trans-unit id="UuWvdqy" resname="Nouveau commentaire">
         <source>Nouveau commentaire</source>
-        <target>__Nouveau commentaire</target>
+        <target>New comment</target>
       </trans-unit>
       <trans-unit id="55AJV4F" resname="Créer nouveau commentaire">
         <source>Créer nouveau commentaire</source>
-        <target>__Créer nouveau commentaire</target>
+        <target>Add comment</target>
       </trans-unit>
       <trans-unit id="Q7mXro6" resname="Retour à la liste des commentaires">
         <source>Retour à la liste des commentaires</source>
-        <target>__Retour à la liste des commentaires</target>
+        <target>Back to comment list</target>
       </trans-unit>
       <trans-unit id="PCM03Hx" resname="Modification commentaire">
         <source>Modification commentaire</source>
-        <target>__Modification commentaire</target>
+        <target>Edit comment</target>
       </trans-unit>
       <trans-unit id="GxsnYK5" resname="Détails de l'utilisateur">
         <source>Détails de l'utilisateur</source>
-        <target>__Détails de l'utilisateur</target>
+        <target>User's detail</target>
       </trans-unit>
       <trans-unit id="ch5bKau" resname="Utilisateur">
         <source>Utilisateur</source>
-        <target>__Utilisateur</target>
+        <target>User</target>
       </trans-unit>
       <trans-unit id="53Az_YO" resname="Administrateur">
         <source>Administrateur</source>
-        <target>__Administrateur</target>
+        <target>Admin</target>
       </trans-unit>
       <trans-unit id="corX2yB" resname="Admin ET Utilisateur">
         <source>Admin ET Utilisateur</source>
-        <target>__Admin ET Utilisateur</target>
+        <target>Admin and user</target>
       </trans-unit>
       <trans-unit id=".5yLjAZ" resname="Mot de passe">
         <source>Mot de passe</source>
-        <target>__Mot de passe</target>
+        <target>Password</target>
       </trans-unit>
       <trans-unit id="0eixFfF" resname="Email Vérifié ?">
         <source>Email Vérifié ?</source>
-        <target>__Email Vérifié ?</target>
+        <target>Email verified ?</target>
       </trans-unit>
       <trans-unit id="4yW.j5A" resname="Prénom">
         <source>Prénom</source>
-        <target>__Prénom</target>
+        <target>Firstname</target>
       </trans-unit>
       <trans-unit id="6.uHBoB" resname="Liste des utilisateurs inscrits">
         <source>Liste des utilisateurs inscrits</source>
-        <target>__Liste des utilisateurs inscrits</target>
+        <target>Users subscribed</target>
       </trans-unit>
       <trans-unit id="2VO8TkL" resname="Email vérifié ?">
         <source>Email vérifié ?</source>
-        <target>__Email vérifié ?</target>
+        <target>Email verified ?</target>
       </trans-unit>
       <trans-unit id="LBTVcvw" resname="Création le">
         <source>Création le</source>
-        <target>__Création le</target>
+        <target>Created at</target>
       </trans-unit>
       <trans-unit id="nGAo9GZ" resname="Créer nouveau">
         <source>Créer nouveau</source>
-        <target>__Créer nouveau</target>
+        <target>Add new</target>
       </trans-unit>
       <trans-unit id="Qbgjs2g" resname="Ajout utilisateur">
         <source>Ajout utilisateur</source>
-        <target>__Ajout utilisateur</target>
+        <target>Add user manualy</target>
       </trans-unit>
       <trans-unit id="uv9olC1" resname="Créer un nouvel utilisateur">
         <source>Créer un nouvel utilisateur</source>
-        <target>__Créer un nouvel utilisateur</target>
+        <target>Add user manualy</target>
       </trans-unit>
       <trans-unit id="S0NuJIW" resname="Retour à la liste des utilisateurs">
         <source>Retour à la liste des utilisateurs</source>
-        <target>__Retour à la liste des utilisateurs</target>
+        <target>Back to user's list</target>
       </trans-unit>
       <trans-unit id="rNA2eEW" resname="Modification Utilisateurs">
         <source>Modification Utilisateurs</source>
-        <target>__Modification Utilisateurs</target>
+        <target>Edit user</target>
       </trans-unit>
       <trans-unit id="K2TUEvx" resname="Veuillez confirmer votre email en cliquant sur le lien qui vous a était envoyé avec l'adresse mail enregistré">
         <source>Veuillez confirmer votre email en cliquant sur le lien qui vous a était envoyé avec l'adresse mail enregistré</source>
@@ -311,143 +312,143 @@
       </trans-unit>
       <trans-unit id="I8z8M7l" resname="Confirmer mon e-mail">
         <source>Confirmer mon e-mail</source>
-        <target>__Confirmer mon e-mail</target>
+        <target>Confirm my e-mail</target>
       </trans-unit>
       <trans-unit id="1AZqj3V" resname="Contactez moi">
         <source>Contactez moi</source>
-        <target>__Contactez moi</target>
+        <target>Contact me</target>
       </trans-unit>
       <trans-unit id="PCX0_17" resname="S'inscrire">
         <source>S'inscrire</source>
-        <target>__S'inscrire</target>
+        <target>Subscribed</target>
       </trans-unit>
       <trans-unit id="Z3MP7A4" resname="S'identifier">
         <source>S'identifier</source>
-        <target>__S'identifier</target>
+        <target>Login</target>
       </trans-unit>
       <trans-unit id="XPO1HQH" resname="Page Admin">
         <source>Page Admin</source>
-        <target>__Page Admin</target>
+        <target>Admin page</target>
       </trans-unit>
       <trans-unit id="KPRXHyi" resname="Mon compte">
         <source>Mon compte</source>
-        <target>__Mon compte</target>
+        <target>My account</target>
       </trans-unit>
       <trans-unit id="_1_eksG" resname="Déconnexion">
         <source>Déconnexion</source>
-        <target>__Déconnexion</target>
+        <target>Logout</target>
       </trans-unit>
       <trans-unit id="juojpGE" resname="Liste des articles">
         <source>Liste des articles</source>
-        <target>__Liste des articles</target>
+        <target>Article's list</target>
       </trans-unit>
       <trans-unit id="Da1htjG" resname="Projets">
         <source>Projets</source>
-        <target>__Projets</target>
+        <target>Project</target>
       </trans-unit>
       <trans-unit id="E_ANrgQ" resname="Détails projet">
         <source>Détails projet</source>
-        <target>__Détails projet</target>
+        <target>Detail's project</target>
       </trans-unit>
       <trans-unit id="DDsyjSG" resname="Détails du projet">
         <source>Détails du projet</source>
-        <target>__Détails du projet</target>
+        <target>Detail's project</target>
       </trans-unit>
       <trans-unit id="VZjGeSG" resname="Nom du projet">
         <source>Nom du projet</source>
-        <target>__Nom du projet</target>
+        <target>Project name</target>
       </trans-unit>
       <trans-unit id="tO38wIk" resname="Type de projet">
         <source>Type de projet</source>
-        <target>__Type de projet</target>
+        <target>Project's type</target>
       </trans-unit>
       <trans-unit id="QQj6kta" resname="Lien vers projet">
         <source>Lien vers projet</source>
-        <target>__Lien vers projet</target>
+        <target>link to project</target>
       </trans-unit>
       <trans-unit id="6a2m8YY" resname="Image du projet">
         <source>Image du projet</source>
-        <target>__Image du projet</target>
+        <target>Picture's project</target>
       </trans-unit>
       <trans-unit id="nEZhmfj" resname="Projet">
         <source>Projet</source>
-        <target>__Projet</target>
+        <target>Project</target>
       </trans-unit>
       <trans-unit id="n5_vuKS" resname="Liste des projet">
         <source>Liste des projet</source>
-        <target>__Liste des projet</target>
+        <target>Project's list</target>
       </trans-unit>
       <trans-unit id="6XJ8Zwq" resname="Ajouter projet">
         <source>Ajouter projet</source>
-        <target>__Ajouter projet</target>
+        <target>Add project</target>
       </trans-unit>
       <trans-unit id="OutpwYZ" resname="Nouveau projet">
         <source>Nouveau projet</source>
-        <target>__Nouveau projet</target>
+        <target>Add project</target>
       </trans-unit>
       <trans-unit id="RhguFn_" resname="Créer projet">
         <source>Créer projet</source>
-        <target>__Créer projet</target>
+        <target>Add project</target>
       </trans-unit>
       <trans-unit id="4PIQU1o" resname="Modification du projet">
         <source>Modification du projet</source>
-        <target>__Modification du projet</target>
+        <target>Edit project</target>
       </trans-unit>
       <trans-unit id="gK39lfH" resname="Mon parcours">
         <source>Mon parcours</source>
-        <target>__Mon parcours</target>
+        <target>My professional background</target>
       </trans-unit>
       <trans-unit id="IlSD0By" resname="Mes compétences">
         <source>Mes compétences</source>
-        <target>__Mes compétences</target>
+        <target>My skill</target>
       </trans-unit>
       <trans-unit id="X_0PkDN" resname="mes projets">
         <source>mes projets</source>
-        <target>__mes projets</target>
+        <target>my projects</target>
       </trans-unit>
       <trans-unit id="OZMo1nd" resname="Une partie des projets sur lesquels j'ai travaillé">
         <source>Une partie des projets sur lesquels j'ai travaillé</source>
-        <target>__Une partie des projets sur lesquels j'ai travaillé</target>
+        <target>Some of the project that I worked on</target>
       </trans-unit>
       <trans-unit id="NdJc89J" resname="A propos de moi">
         <source>A propos de moi</source>
-        <target>__A propos de moi</target>
+        <target>About me</target>
       </trans-unit>
       <trans-unit id="M99XN0U" resname="Ayant une expérience dans le travail pendant 10 ans, j'ai découvert le code à l'âge de 29 ans.&lt;br&gt;&#10;        Depuis je ne cesse d'apprendre chaques jours. Le code me passionne et me permet de faire le travail qui me convient.&#10;        Début 2021 j'ai décidé de changer de vie et d'intégrer une formation de développeur web qui m'a permis de consilider mes compétences.">
-        <source>Ayant une expérience dans le travail pendant 10 ans, j'ai découvert le code à l'âge de 29 ans.&lt;br&gt;
-        Depuis je ne cesse d'apprendre chaques jours. Le code me passionne et me permet de faire le travail qui me convient.
-        Début 2021 j'ai décidé de changer de vie et d'intégrer une formation de développeur web qui m'a permis de consilider mes compétences.</source>
-        <target><![CDATA[__Ayant une expérience dans le travail pendant 10 ans, j'ai découvert le code à l'âge de 29 ans.<br>
-        Depuis je ne cesse d'apprendre chaques jours. Le code me passionne et me permet de faire le travail qui me convient.
-        Début 2021 j'ai décidé de changer de vie et d'intégrer une formation de développeur web qui m'a permis de consilider mes compétences.]]></target>
+        <source>Ayant une expérience dans le travail pendant 10 ans, j'ai découvert le code à l'âge de 29 ans.&lt;br&gt; Depuis je ne cesse d'apprendre chaques jours. Le code me passionne et me permet de faire le travail qui me convient. Début 2021 j'ai décidé de changer de vie et d'intégrer une formation de développeur web qui m'a permis de consilider mes compétences.</source>
+        <target>
+          <![CDATA[Having worked for 10 years, I discovered the code at the age of 29.<br>
+        Since then, I keep on learning every day. I'm passionate about code and it allows me to do the work that suits me.
+        Early 2021 I decided to change my life and to integrate a web developer training which allowed me to consolidate my skills.]]>
+        </target>
       </trans-unit>
       <trans-unit id="fFX1zrN" resname="Vous avez une idée ? Un projet ? N'hésitez pas à me contacter !">
         <source>Vous avez une idée ? Un projet ? N'hésitez pas à me contacter !</source>
-        <target>__Vous avez une idée ? Un projet ? N'hésitez pas à me contacter !</target>
+        <target>Do you have an idea? A project ? Do not hesitate to contact me!</target>
       </trans-unit>
       <trans-unit id="bGk5w4X" resname="Envoyez moi un mail">
         <source>Envoyez moi un mail</source>
-        <target>__Envoyez moi un mail</target>
+        <target>Send me mail</target>
       </trans-unit>
       <trans-unit id="BP4wP7." resname="ou contact direct">
         <source>ou contact direct</source>
-        <target>__ou contact direct</target>
+        <target>or direct contact</target>
       </trans-unit>
       <trans-unit id="eeXPIN4" resname="Adresse">
         <source>Adresse</source>
-        <target>__Adresse</target>
+        <target>Adress</target>
       </trans-unit>
       <trans-unit id="zExCS1c" resname="Téléphone">
         <source>Téléphone</source>
-        <target>__Téléphone</target>
+        <target>Phone</target>
       </trans-unit>
       <trans-unit id="lpzL089" resname="Email">
         <source>Email</source>
-        <target>__Email</target>
+        <target>Mail</target>
       </trans-unit>
       <trans-unit id="aZ7.kvL" resname="Mes réseaux sociaux">
         <source>Mes réseaux sociaux</source>
-        <target>__Mes réseaux sociaux</target>
+        <target>My social media</target>
       </trans-unit>
     </body>
   </file>
