@@ -1,0 +1,24 @@
+{{ form_start(form) }}
+<div class="wrapper border border-2 w-50">
+    {{ form_label(form.title, "Titre de l'article", {'label_attr': {'class': 'd-block mx-auto text-center w-25'}}) }}
+    {{ form_widget(form.title, {'attr': {'class': 'd-block mx-auto form-control text-center w-25 my-3'}}) }}
+    
+    {{ form_label(form.content, "Contenu de l'article", {'label_attr': {'class': 'd-block mx-auto text-center w-25'}}) }}
+    {{ form_widget(form.content, {'attr': {'class': 'd-block mx-auto form-control text-center w-25 my-3'}}) }}
+    
+    {{ form_label(form.poster, "Image de l'article", {'label_attr': {'class': 'd-block mx-auto text-center w-25'}}) }}
+    {{ form_widget(form.poster, {'attr': {'class': 'd-block mx-auto form-control text-center w-25 my-3'}}) }}
+    
+    {{ form_label(form.createdAt, "Date d'ajout", {'label_attr': {'class': 'd-block mx-auto text-center w-25'}}) }}
+    {{ form_widget(form.createdAt, {'attr': {'class': 'd-block mx-auto form-control text-center w-25 my-3'}}) }}
+    
+    {{ form_label(form.updatedAt, "Date de mise à jour", {'label_attr': {'class': 'd-block mx-auto text-center w-25'}}) }}
+    {{ form_widget(form.updatedAt, {'attr': {'class': 'd-block mx-auto form-control text-center w-25 my-3'}}) }}
+
+
+
+    <div class="d-flex justify-content-center">
+        <button class="d-block btn btn-warning my-2 mx -2">{{ button_label|default('Ajouter') }}</button>
+    </div>
+</div>
+{{ form_end(form) }}

@@ -1,0 +1,12 @@
+{% extends 'admin/baseAdmin.html.twig' %}
+
+{% block title %} {{ parent() }} {% trans %} Nouveau contenu {% endtrans %} {% endblock %}
+
+{% block body %}
+    <h1 class="text-center">{% trans %}Créer un nouveau contenu{% endtrans %}</h1>
+
+    {{ include('admin/admin_content/_form.html.twig') }}
+<div class="d-flex justify-content-center">
+    <a class="d-inline my-2 mx-2 btn btn-primary" href="{{ path('admin_content_index') }}">{% trans %} Retour à la liste des produits {% endtrans %}</a>
+</div>
+{% endblock %}

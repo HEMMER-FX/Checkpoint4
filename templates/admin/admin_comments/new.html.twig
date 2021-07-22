@@ -1,0 +1,12 @@
+{% extends 'admin/baseAdmin.html.twig' %}
+
+{% block title %} {{ parent() }} {% trans %} Nouveau commentaire {% endtrans %} {% endblock %}
+
+{% block body %}
+    <h1 class="text-center">{% trans %}Créer nouveau commentaire{% endtrans %}</h1>
+
+    {{ include('admin/admin_comments/_form.html.twig') }}
+<div class="d-flex justify-content-center">
+    <a class="d-inline my-2 mx-2 btn btn-primary" href="{{ path('comments_index') }}">{% trans %} Retour à la liste des commentaires {% endtrans %}</a>
+</div>
+{% endblock %}

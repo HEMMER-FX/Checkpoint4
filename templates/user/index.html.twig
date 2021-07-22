@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ app.user.email }} {% endblock %}
+
+{% block body %}
+    <h1 class="text-center">{% trans %} Liste des utilisateurs inscrits {% endtrans %}</h1>
+
+    <table class="wrapper border border-2">
+        <thead>
+            <tr class="text-uppercase text-center">
+                <th>Id</th>
+                <th>Email</th>
+                <th>{% trans %}Prénom{% endtrans %}</th>
+                <th>{% trans %}Nom{% endtrans %}</th>
+                <th>{% trans %}Email vérifié ?{% endtrans %}</th>
+                <th>Roles</th>
+                <th>{% trans %}Création le{% endtrans %}</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for user in users %}
+            <tr class="text-center">
+                <td>{{ user.id }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.firstName }}</td>
+                <td>{{ user.lastName }}</td>
+                <td>
+                    {% if user.isVerified == "Yes" %}
+                        <span class="text-success text-uppercase"> Yes </span>
+                    {% else %}
+                        <span class="text-danger text-uppercase"> No </span>
+                    {% endif %}
+                </td>
+                <td>
+                    {% if user.roles == ["ROLE_USER"] %}
+                        {% trans %} Utilisateur {% endtrans %}
+                    {% elseif user.roles == ["ROLE_ADMIN"] %}
+                        <span class="text-danger text-uppercase">{% trans %} Administrateur {% endtrans %}</span>
+                        {% else %}
+                        <span class="text-danger text-uppercase">{% trans %} Admin ET Utilisateur {% endtrans %}</span>
+                    {% endif %}
+                </td>
+                <td>{{ user.createdAt ? user.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td>
+                    <a class="d-block my-2 mx-2 btn btn-primary" href="{{ path('user_show', {'id': user.id}) }}">{% trans %}Détails{% endtrans %}</a>
+                    <a class="d-block my-2 mx-2 btn btn-warning"href="{{ path('user_edit', {'id': user.id}) }}">{% trans %}Modifier{% endtrans %}</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="11">{% trans %}Pas de résultats{% endtrans %}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a class="btn btn-warning" href="{{ path('user_new') }}">{% trans %}Créer nouveau{% endtrans %}</a>
+{% endblock %}

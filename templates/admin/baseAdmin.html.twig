@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Admin - {% endblock %}</title>
 
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
@@ -18,11 +18,8 @@
             {{ message }}
         </div>
     {% endfor %}
-
-    {% include "components/nav.html.twig" %}
-
-        {% block body %}{% endblock %}
-
-    {% include 'components/footer.html.twig' %}
+            {# BLOCK NAVBAR #}
+    {% include 'admin/component/navbar.html.twig' %}
+    {% block body %} {% endblock body %}
     </body>
 </html>

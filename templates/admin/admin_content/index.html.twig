@@ -1,0 +1,46 @@
+{% extends 'admin/baseAdmin.html.twig' %}
+
+{% block title %} {{ parent() }} {% trans %} Contenu {% endtrans %} {% endblock %}
+
+{% block body %}
+    <h1 class="text-center">Content index</h1>
+
+    <button type="button" class="d-block mx-auto btn btn-warning my-5">
+        <a href="{{ path('admin_content_new') }}">Create new</a>
+    </button>
+
+    <table class="wrapper border border-2">
+        <thead>
+            <tr class="text-uppercase text-center">
+                <th>Id</th>
+                <th>{% trans %}Titre{% endtrans %}</th>
+                <th>{% trans %}Créer le :{% endtrans %}</th>
+                <th>{% trans %}Ville{% endtrans %}</th>
+                <th>{% trans %}Année{% endtrans %}</th>
+                <th>{% trans %}Description{% endtrans %}</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for content in contents %}
+            <tr class="text-center border">
+                <td>{{ content.id }}</td>
+                <td>{{ content.title }}</td>
+                <td>{{ content.createdAt ? content.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ content.city }}</td>
+                <td>{{ content.year }}</td>
+                <td>{{ content.descriptif }}</td>
+                <td>
+                    <a class="d-block my-2 mx-2 btn btn-primary" href="{{ path('admin_content_show', {'id': content.id}) }}">{% trans %}Détails{% endtrans %}</a>
+                    <a href="{{ path('admin_content_edit', {'id': content.id}) }}">{% trans %}Modifier{% endtrans %}</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">{% trans %}Pas de résultats{% endtrans %}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

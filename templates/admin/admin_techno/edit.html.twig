@@ -1,0 +1,15 @@
+{% extends 'admin/baseAdmin.html.twig' %}
+
+{% block title %} {{ parent() }} {% trans %} Modification {% endtrans %} {% endblock %}
+
+{% block body %}
+    <h1 class="text-center">{% trans %}Modification de la techno{% endtrans %}</h1>
+
+    {{ include('admin/admin_techno/_form.html.twig', {'button_label': 'Modifier'}) }}
+
+    <div class="d-flex">
+        <a class="d-inline mx-auto my-2 mx-2 btn btn-primary" href="{{ path('admin_techno_index') }}">{% trans %} Retour à la liste des technos{% endtrans %}</a>
+    </div>
+
+    {{ include('admin/admin_techno/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'admin/baseAdmin.html.twig' %}
+
+{% block title %} {{ parent() }} {% trans %} Commentaires {% endtrans %} {% endblock %}
+
+{% block body %}
+    <h1 class="text-center my-5">{% trans %}Liste des commentaires{% endtrans %}</h1>
+    <button type="button" class="d-block mx-auto btn btn-warning my-5">
+        <a href="{{ path('admin_comments_new') }}"> {% trans %}Create new{% endtrans %}</a>
+    </button>
+
+    <table class="wrapper border border-2">
+        <thead>
+            <tr class="text-uppercase text-center">
+                <th>Id</th>
+                <th>{% trans %}Prénom de l'auteur {% endtrans %}</th>
+                <th>{% trans %}Commentaire{% endtrans %}</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for comment in comments %}
+            <tr class="text-center border">
+                <td>{{ comment.id }}</td>
+                <td>{{ comment.firstName }}</td>
+                <td>{{ comment.comment }}</td>
+                <td>
+                    <a class="d-block my-2 mx-2 btn btn-primary" href="{{ path('admin_comments_show', {'id': comment.id}) }}">{% trans %}Détails{% endtrans %}</a>
+                    <a class="d-block my-2 mx-2 btn btn-warning" href="{{ path('admin_comments_edit', {'id': comment.id}) }}">{% trans %}Modifier{% endtrans %}</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">{% trans %}Pas de résultat à afficher{% endtrans %}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

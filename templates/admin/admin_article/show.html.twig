@@ -1,0 +1,43 @@
+{% extends 'admin/baseAdmin.html.twig' %}
+
+{% block title %} {{ parent() }} {% trans %} Détails article {% endtrans %} {% endblock %}
+
+{% block body %}
+    <h1 class="text-center"> {% trans %}Détails de l'article {% endtrans %} </h1>
+
+    <table class="wrapper border border-2">
+        <tbody>
+            <tr>
+                <th class="px-5 py-2">Id</th>
+                <td>{{ article.id }}</td>
+            </tr>
+            <tr>
+                <th class="px-5 py-2">{% trans %}Titre de l'article{% endtrans %}</th>
+                <td>{{ article.title }}</td>
+            </tr>
+            <tr>
+                <th class="px-5 py-2">{% trans %}Contenu{% endtrans %}</th>
+                <td>{{ article.content }}</td>
+            </tr>
+            <tr>
+                <th class="px-5 py-2">{% trans %}Image{% endtrans %}</th>
+                <td>{{ article.poster }}</td>
+            </tr>
+            <tr>
+                <th class="px-5 py-2">{% trans %}Crée le :{% endtrans %}</th>
+                <td>{{ article.createdAt ? article.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th class="px-5 py-2">{% trans %}Mis à jour le :{% endtrans %}</th>
+                <td>{{ article.updatedAt ? article.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+<div class="d-flex justify-content-center">
+    <a class="d-inline my-3 mx-3 btn btn-primary" href="{{ path('admin_article_index') }}">{% trans %}Retour à la liste{% endtrans %}</a>
+
+    <a class="d-inline my-3 mx-3 btn btn-warning" href="{{ path('admin_article_edit', {'id': article.id}) }}">{% trans %}Modification{% endtrans %}</a>
+
+    {{ include('admin/admin_article/_delete_form.html.twig') }}
+</div>
+{% endblock %}

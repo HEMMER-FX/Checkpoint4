@@ -1,0 +1,12 @@
+{% if is_granted('ROLE_ADMIN') %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="container-fluid">
+            <li><a class="navbar-brand" href="{{ path("home")}}">Accueil</a></li>
+            <li><a class="navbar-brand" href="{{ path("admin_article_index")}}">Article</a></li>
+            <li><a class="navbar-brand" href="{{ path("admin_content_index")}}">Content</a></li>
+            <li><a class="navbar-brand" href="{{ path("admin_techno_index")}}">Techno</a></li>
+            <li><a class="navbar-brand" href="{{ path("admin_comments_index")}}">Comments</a></li>
+            <li><a class="navbar-brand" href="{{ path("admin_user_index")}}">Users</a></li>
+        </ul>
+    </nav>
+{% endif %}
