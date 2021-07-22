@@ -21,13 +21,13 @@ class UserFixtures extends Fixture
         
 
         $user = new User();
-        $user->setEmail('nos@gmail.com');
+        $user->setEmail('hfx@gmail.com');
         $user->setPassword($this->passwordHasher->hashPassword(
             $user,
-            'tekilatex'
+            'adminadmin'
         ));
-        $user->setFirstName('Nicolas');
-        $user->setLastName('Klipfel');
+        $user->setFirstName('francois');
+        $user->setLastName('xavier');
         $user->setSlug(uniqid($user->getFirstName()));
         $user->setRoles(['ROLE_ADMIN']);
         $manager->persist($user);

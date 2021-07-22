@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ path('home')}}"><img class="flag_logo" src="./uploads/logo_fx.png" alt="logoAccueil"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around w-100">
+        <li><a href="{{ path("home") }}" class="navbar-brand">{% trans %}Accueil{% endtrans %}</a></li>
+
+        {% if app.user == false  %}
+            <li><a href="{{ path("app_register") }}" class="navbar-brand">{% trans %}S'inscrire{% endtrans %}</a></li>
+            <li><a href="{{ path("app_login") }}" class="navbar-brand">{% trans %}S'identifier{% endtrans %}</a></li>
+        {% endif %}
+
+        {% if is_granted('ROLE_ADMIN') %}
+            <li><a href="{{ path("admin_index")}}" class="navbar-brand">{% trans %}Page Admin{% endtrans %}</a></li>
+        {% endif %}
+
+        {% if app.user %}
+            <li><a href="{{ path("user_show", {'id' :app.user.id}) }}" class="navbar-brand">{% trans %}Mon compte{% endtrans %}</a></li>
+            <li><a href="{{ path("app_logout") }}" class="navbar-brand">{% trans %}Déconnexion{% endtrans %}</a></li>
+        {% endif %}
+
+      <div>
+        <a href="{{ path('local_en') }}"><img class="flag_logo" src="./uploads/drapeau_eng_logo.png" alt="english flag"></a>
+
+        <a href="{{ path('local_fr') }}"><img class="flag_logo" src="./uploads/drapeau_fr_logo.png" alt="french flag"></a>
+      </div>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -5,10 +5,13 @@ namespace App\Entity;
 use App\Repository\ArticleRepository;
 use Doctrine\ORM\Mapping as ORM;
 use App\Entity\traits\Timer;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass=ArticleRepository::class)
  * @ORM\HasLifecycleCallbacks()
+ * @Vich\Uploadable
  */
 class Article
 {
@@ -36,8 +39,15 @@ class Article
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @var string
      */
     private $poster;
+
+    /**
+     * @Vich\UploadableField(mapping="poster_file", fileNameProperty="poster")
+     * @var File
+     */
+    private $posterFile;
 
     public function getId(): ?int
     {
@@ -78,5 +88,17 @@ class Article
         $this->poster = $poster;
 
         return $this;
+    }
+
+    public function setPosterFile(File $image = null):Article
+    {
+        $this->posterFile = $image;
+        return $this;
+    }
+
+
+    public function getPosterFile(): ?File
+    {
+        return $this->posterFile;
     }
 }

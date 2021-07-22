@@ -1,0 +1,31 @@
+{% extends 'admin/baseAdmin.html.twig' %}
+
+{% block title %} {{ parent() }} {% trans %} Détails techno {% endtrans %} {% endblock %}
+
+{% block body %}
+    <h1 class="wrapper border border-2">Techno</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th class="px-5 py-2">Id</th>
+                <td>{{ techno.id }}</td>
+            </tr>
+            <tr>
+                <th class="px-5 py-2">{% trans %}Nom de la techno{% endtrans %}</th>
+                <td>{{ techno.name }}</td>
+            </tr>
+            <tr>
+                <th class="px-5 py-2">{% trans %}Image de la techno{% endtrans %}</th>
+                <td>{{ techno.poster }}</td>
+            </tr>
+        </tbody>
+    </table>
+<div class="d-flex justify-content-center">
+    <a class="d-inline my-3 mx-3 btn btn-primary" href="{{ path('admin_techno_index') }}">{% trans %}Retour à la liste{% endtrans %}</a>
+
+    <a class="d-inline my-3 mx-3 btn btn-warning" href="{{ path('admin_techno_edit', {'id': techno.id}) }}">{% trans %}Modifier{% endtrans %}</a>
+
+    {{ include('admin/admin_techno/_delete_form.html.twig') }}
+</div>
+{% endblock %}

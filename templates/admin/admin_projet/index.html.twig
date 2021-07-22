@@ -1,0 +1,45 @@
+{% extends 'admin/baseAdmin.html.twig' %}
+
+{% block title %} {{ parent() }} {% trans %} Projet {% endtrans %} {% endblock %}
+
+
+{% block body %}
+   <h1 class="text-center my-5">{% trans %}Liste des projet{% endtrans %}</h1>
+
+    <button type="button" class="d-block mx-auto btn btn-warning my-5">
+        <a href="{{ path('admin_projet_new') }}"> {% trans %}Ajouter projet{% endtrans %}</a>
+    </button>
+
+    <table class="wrapper border border-2">
+        <thead>
+            <tr class="text-uppercase text-center">
+                <th>Id</th>
+                <th>{% trans %}Nom{% endtrans %}</th>
+                <th>{% trans %}Type de projet{% endtrans %}</th>
+                <th>{% trans %}Lien vers projet{% endtrans %}</th>
+                <th>{% trans %}Image{% endtrans %}</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for projet in projets %}
+            <tr>
+                <td>{{ projet.id }}</td>
+                <td>{{ projet.name }}</td>
+                <td>{{ projet.typeProject }}</td>
+                <td>{{ projet.url }}</td>
+                <td>{{ projet.poster }}</td>
+                <td>
+                    <a class="d-block my-2 mx-2 btn btn-primary" href="{{ path('admin_projet_show', {'id': projet.id}) }}">{% trans %}Détails{% endtrans %}</a>
+                    <a class="d-block my-2 mx-2 btn btn-warning" href="{{ path('admin_projet_edit', {'id': projet.id}) }}">{% trans %}Modification{% endtrans %}</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">{% trans %}Pas de résultat à afficher{% endtrans %}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

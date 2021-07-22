@@ -1,0 +1,14 @@
+{{ form_start(form) }}
+<div class="wrapper border border-2 w-50">
+
+    {{ form_label(form.firstName, 'Votre nom', {'label_attr': {'class': 'd-block mx-auto text-center w-25'}}) }}
+    {{ form_widget(form.firstName, {'attr': {'class': 'd-block mx-auto form-control text-center w-25 my-3'}}) }}
+    
+    {{ form_label(form.comment, 'Commentaire', {'label_attr': {'class': 'd-block mx-auto text-center w-25'}}) }}
+    {{ form_widget(form.comment, {'attr': {'class': 'd-block mx-auto form-control text-center w-25 my-3'}}) }}
+
+    <div class="d-flex justify-content-center">
+        <button class="d-block btn btn-warning my-2 mx -2">{{ button_label|default('Ajouter') }}</button>
+    </div>
+</div>
+{{ form_end(form) }}

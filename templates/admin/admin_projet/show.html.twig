@@ -1,0 +1,40 @@
+{% extends 'admin/baseAdmin.html.twig' %}
+
+{% block title %} {{ parent() }} {% trans %} Détails projet {% endtrans %} {% endblock %}
+
+{% block body %}
+    <h1 class="text-center"> {% trans %}Détails du projet {% endtrans %} </h1>
+
+    <table class="wrapper border border-2">
+        <tbody>
+            <tr>
+                <th class="px-5 py-2">Id</th>
+                <td>{{ projet.id }}</td>
+            </tr>
+            <tr>
+                <th class="px-5 py-2">{% trans %}Nom du projet{% endtrans %}</th>
+                <td>{{ projet.name }}</td>
+            </tr>
+            <tr>
+                <th class="px-5 py-2">{% trans %}Type de projet{% endtrans %}</th>
+                <td>{{ projet.typeProject }}</td>
+            </tr>
+            <tr>
+                <th class="px-5 py-2">{% trans %}Lien vers projet{% endtrans %}</th>
+                <td>{{ projet.url }}</td>
+            </tr>
+            <tr>
+                <th class="px-5 py-2">{% trans %}Image du projet{% endtrans %}</th>
+                <td>{{ projet.poster }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+<div class="d-flex justify-content-center">
+    <a class="d-inline my-3 mx-3 btn btn-primary" href="{{ path('admin_projet_index') }}">{% trans %}Retour à la liste{% endtrans %}</a>
+
+    <a class="d-inline my-3 mx-3 btn btn-warning" href="{{ path('admin_projet_edit', {'id': projet.id}) }}">{% trans %}Modification{% endtrans %}</a>
+
+    {{ include('admin/admin_projet/_delete_form.html.twig') }}
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+<h3 class="wrapper text-center my-5 text-uppercase fs-1"> {% trans %}mes projets{% endtrans %} </h3>
+<h3 class="wrapper text-center my-5"> {% trans %}Une partie des projets sur lesquels j'ai travaillé{% endtrans %} </h3>
+
+    <div class="bg-white text-black w-50 mx-auto rounded-3">
+    {% for projet in projets %}
+    <div class="text-center">
+
+            <h3 class="text-dark text-uppercase fs-3 text py-2">{{ projet.name }}</h3>
+            <h3 class="text-secondary text-uppercase fs-5 text">{{ projet.typeProject }}</h3>
+            <div class="my-5">
+                <a href="{{ projet.url }}"><img class="image_projet" src="{{ vich_uploader_asset(projet) }}" alt="image de projet"></a>
+             </div>
+             <div class="bg bg-primary border-bottom border-primary separate mx-auto my-3"> </div>
+             
+    </div>
+        
+    {% endfor %}
+</div>

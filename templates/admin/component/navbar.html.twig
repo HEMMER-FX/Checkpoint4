@@ -1,0 +1,21 @@
+{% if is_granted('ROLE_ADMIN') %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ path('home')}}"><img class="flag_logo" src="./../uploads/logo_fx.png" alt="logoAccueil"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around w-100">
+        <li><a class="navbar-brand" href="{{ path("home")}}">{% trans %}Accueil{% endtrans %}</a></li>
+        <li><a class="navbar-brand" href="{{ path("admin_article_index")}}">{% trans %}Article{% endtrans %}</a></li>
+        <li><a class="navbar-brand" href="{{ path("admin_content_index")}}">{% trans %}Content{% endtrans %}</a></li>
+        <li><a class="navbar-brand" href="{{ path("admin_projet_index")}}">{% trans %}Projets{% endtrans %}</a></li>
+        <li><a class="navbar-brand" href="{{ path("admin_techno_index")}}">{% trans %}Techno{% endtrans %}</a></li>
+        <li><a class="navbar-brand" href="{{ path("admin_comments_index")}}">{% trans %}Comments{% endtrans %}</a></li>
+        <li><a class="navbar-brand" href="{{ path("admin_user_index")}}">{% trans %}Users{% endtrans %}</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endif %}

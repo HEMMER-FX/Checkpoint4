@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
@@ -13,7 +12,22 @@
         {% endblock %}
     </head>
     <body>
-    {% include "component/navigation.html.twig" %}
+    		<div id="map">
+			<!-- Ici s'affichera la carte -->
+		</div>
+    {% for message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+    {% endfor %}
+
+    {% include "components/nav.html.twig" %}
+
         {% block body %}{% endblock %}
+
+
+    {% block formContact %}
+        {% include 'components/footer.html.twig' %}
+    {% endblock formContact %}
     </body>
 </html>
