@@ -55,7 +55,7 @@ class ContactGuestType extends AbstractType
                 'attr' =>
                 [
                     'class' => 'form-control',
-                    'placeholder' => 'En quoi pouvons nous vous aider ?',
+                    'placeholder' => 'Votre message ?',
                     'required' => true
                 ]
             ])

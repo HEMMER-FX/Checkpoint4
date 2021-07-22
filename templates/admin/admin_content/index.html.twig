@@ -32,7 +32,7 @@
                 <td>{{ content.descriptif }}</td>
                 <td>
                     <a class="d-block my-2 mx-2 btn btn-primary" href="{{ path('admin_content_show', {'id': content.id}) }}">{% trans %}Détails{% endtrans %}</a>
-                    <a href="{{ path('admin_content_edit', {'id': content.id}) }}">{% trans %}Modifier{% endtrans %}</a>
+                    <a class="d-block my-2 mx-2 btn btn-warning" href="{{ path('admin_content_edit', {'id': content.id}) }}">{% trans %}Modifier{% endtrans %}</a>
                 </td>
             </tr>
         {% else %}

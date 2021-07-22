@@ -1,0 +1,11 @@
+<div class="wrapper bg bg-white rounded-pill w-50">
+    <h2 class="text-center py-3 text-uppercase fs-1 test"> {% trans %}Mes compétences{% endtrans %} </h2>
+    <ul class="d-flex justify-content-center style_list">
+        {% for techno in technos %}
+        <div class="m-5 p-4 secondary rounded-pill">
+            <li class="text-center fw-bold">{{ techno.name }}</li>
+            <li class="text-center"><img class="flag_logo" src="{{ vich_uploader_asset(techno) }}" alt="image de techno"></li>
+        </div>
+        {% endfor %}
+    </ul>
+</div>

@@ -3,6 +3,9 @@
 namespace App\Controller;
 
 use App\Form\ContactGuestType;
+use App\Repository\ContentRepository;
+use App\Repository\ProjetRepository;
+use App\Repository\TechnoRepository;
 use Symfony\Component\Mime\Email;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Mailer\MailerInterface;
@@ -15,9 +18,16 @@ class HomeController extends AbstractController
     /**
      * @Route("/", name="home")
      */
-    public function index(): Response
+    public function index(
+        TechnoRepository $technoRepository,
+        ContentRepository $contentRepository,
+        ProjetRepository $projetRepository): Response
     {
-        return $this->render('home/index.html.twig');
+        return $this->render('home/index.html.twig', [
+            'technos' => $technoRepository->findAll(),
+            'contents' => $contentRepository->findAll(),
+            'projets' => $projetRepository->findAll(),
+        ]);
     }
     
     /**
@@ -50,4 +60,26 @@ class HomeController extends AbstractController
             'form' => $form->createView()
         ]);
     }
+
+    /**
+     * @Route("change-locale-fr/", name="local_fr")
+     */
+    public function setLocaleFr(Request $request): Response
+    {
+        $request->getSession()->set('_locale', 'fr');
+
+        return $this->redirect($request->headers->get('referer'));
+    }
+
+    /**
+     * @Route("change-locale-en/", name="local_en")
+     */
+    public function setLocaleEn(Request $request): Response
+    {
+        $request->getSession()->set('_locale', 'en');
+
+        return $this->redirect($request->headers->get('referer'));
+    }
+
+    
 }

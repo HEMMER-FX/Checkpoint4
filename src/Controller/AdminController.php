@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Repository\UserRepository;
+use App\Repository\ProjetRepository;
 use App\Repository\TechnoRepository;
 use App\Repository\ArticleRepository;
 use App\Repository\ContentRepository;
@@ -10,9 +11,11 @@ use App\Repository\CommentsRepository;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 /**
  * @Route("/admin", name="admin_")
+ * @IsGranted("ROLE_ADMIN")
  */
 class AdminController extends AbstractController
 {
@@ -70,6 +73,16 @@ class AdminController extends AbstractController
     {
         return $this->render('user/index.html.twig', [
             'users' => $userRepository->findAll(),
+        ]);
+    }
+
+    /**
+     * @Route("/projet", name="projet_index", methods={"GET"})
+     */
+    public function index(ProjetRepository $projetRepository): Response
+    {
+        return $this->render('admin/admin_projet/index.html.twig', [
+            'projets' => $projetRepository->findAll(),
         ]);
     }
 

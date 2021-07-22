@@ -6,6 +6,7 @@ use App\Entity\Techno;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Vich\UploaderBundle\Form\Type\VichFileType;
 
 class TechnoType extends AbstractType
 {
@@ -13,7 +14,11 @@ class TechnoType extends AbstractType
     {
         $builder
             ->add('name')
-            ->add('poster')
+            ->add('posterFile', VichFileType::class, [
+                'required'      => false,
+                'allow_delete'  => false, // not mandatory, default is true
+                'download_uri' => false, // not mandatory, default is true
+            ])
         ;
     }
 

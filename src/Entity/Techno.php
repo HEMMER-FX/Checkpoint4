@@ -4,9 +4,12 @@ namespace App\Entity;
 
 use App\Repository\TechnoRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass=TechnoRepository::class)
+ * @Vich\Uploadable
  */
 class Techno
 {
@@ -26,6 +29,12 @@ class Techno
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $poster;
+
+    /**
+     * @Vich\UploadableField(mapping="poster_file", fileNameProperty="poster")
+     * @var File
+     */
+    private $posterFile;
 
     public function getId(): ?int
     {
@@ -54,5 +63,17 @@ class Techno
         $this->poster = $poster;
 
         return $this;
+    }
+
+    public function setPosterFile(File $image = null):Techno
+    {
+        $this->posterFile = $image;
+        return $this;
+    }
+
+
+    public function getPosterFile(): ?File
+    {
+        return $this->posterFile;
     }
 }

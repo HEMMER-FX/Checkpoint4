@@ -1,0 +1,16 @@
+<div class="wrapper text-center my-5">
+    <h2 class="my-5 text-uppercase fs-1"> {% trans %}Mon parcours{% endtrans %}</h2>
+
+            {% for content in contents %}
+            <div class="d-block w-50 text-dark mx-auto rounded-3 my-4 bg bg-white rounded-pill w-50">
+                <h3 class="my-2">{{ content.title }}</h3>
+                <h5 class="my-2">Années :{{ content.year }}</h5>
+                <h5 class="my-2">Ville d'obtention : {{ content.city }}</h5>
+                
+                {{ content.descriptif }}
+
+                <h5 class="my-2">Mis à jour le : {{ content.createdAt|date('Y-m-d') }}</h5>
+                </div>
+            {% endfor %}
+
+</div>

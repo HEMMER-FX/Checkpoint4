@@ -3,7 +3,7 @@
 {% block title %} {{ parent() }} {% trans %} Article {% endtrans %} {% endblock %}
 
 {% block body %}
-    <h1 class="text-center my-5">Article index</h1>
+    <h1 class="text-center my-5">{% trans %}Liste des articles{% endtrans %}</h1>
 
     <button type="button" class="d-block mx-auto btn btn-warning my-5">
         <a href="{{ path('admin_article_new') }}"> {% trans %}Ajouter article{% endtrans %}</a>
