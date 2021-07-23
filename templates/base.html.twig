@@ -12,9 +12,7 @@
         {% endblock %}
     </head>
     <body>
-    		<div id="map">
-			<!-- Ici s'affichera la carte -->
-		</div>
+
     {% for message in app.flashes('success') %}
         <div class="alert alert-success">
             {{ message }}
@@ -29,5 +27,6 @@
     {% block formContact %}
         {% include 'components/footer.html.twig' %}
     {% endblock formContact %}
+
     </body>
 </html>

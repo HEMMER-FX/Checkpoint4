@@ -80,6 +80,5 @@ class HomeController extends AbstractController
 
         return $this->redirect($request->headers->get('referer'));
     }
-
     
 }
